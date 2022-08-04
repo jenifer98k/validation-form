@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Omega</a>
+      
+    </header>
+<br> <br>
+ <section class="contact" id="contact">
+
+<div class="contactForm">
+    <h3>Sign Up</h3>
+    <p>No credit card required</p>
+    <div class="inputBox"><!-------Email vaidation---------->
+        <input type="text"  placeholder="Email address" id="email">
+        <span class="error" id="erroremail"></span> 
+      </div>
+      
+    <div class="inputBox"><!-------name vaidation---------->
+<input type="text"  placeholder="Company Name" id="name">
+<span class="error" id="errorname"></span> 
+    </div>
+   <div class="inputBox"><!-------password vaidation---------->
+        <input type="password"  placeholder="password" id="password"></input>
+        <span class="error" id="errorpassword"></span> 
+        </div>
+      <div class="checkbox"><!--------check validation------------->
+        <input type='checkbox' id='check-box' class="check1">
+      <span>I agree to the <a class="link" href="#">Terms and Conditions</a></span> <br>
+      <span class="error" id="errorcheck"></span> 
+      </div>
+  <div class="inputBox"><!---------------------SUBMIT--------------------->
+        <input type="submit" value="Get Started" id="btn" onclick='validateForm()'>
+      </div>
+    <p >Already Have an Account <a href="#" >Sign In</a></p>
+</div>
+ </section>  
+ <script src="script.js"></script>         
+  <!-- <script type="text/javascript">
+    window.addEventListener('scroll',function(){
+        const header=document.querySelector('header');
+        header.classList.toggle('sticky',window.scrollY > 0)
+    })
+   </script>-->
+</body>
+</html>
